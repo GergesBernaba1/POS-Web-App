@@ -1,0 +1,46 @@
+<div class="user-management-container">
+  <h2>User Management</h2>
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-row">
+      <label>Username</label>
+      <input formControlName="username" type="text" />
+    </div>
+    <div class="form-row">
+      <label>Email</label>
+      <input formControlName="email" type="email" />
+    </div>
+    <div class="form-row">
+      <label>First Name</label>
+      <input formControlName="firstName" type="text" />
+    </div>
+    <div class="form-row">
+      <label>Last Name</label>
+      <input formControlName="lastName" type="text" />
+    </div>
+    <div class="form-row">
+      <label>Role</label>
+      <select formControlName="role">
+        <option value="Admin">Admin</option>
+        <option value="Manager">Manager</option>
+        <option value="Employee">Employee</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label>Active</label>
+      <input formControlName="isActive" type="checkbox" />
+    </div>
+    <button type="submit" [disabled]="userForm.invalid || loading">Create User</button>
+  </form>
+
+  <div class="users-list">
+    <h3>Users</h3>
+    <!-- TODO: List users here -->
+    <div *ngIf="users.length === 0">No users found.</div>
+    <ul *ngIf="users.length > 0">
+      <li *ngFor="let user of users">
+        {{ user.username }} ({{ user.role }}) - {{ user.email }}
+        <!-- TODO: Add edit/delete actions -->
+      </li>
+    </ul>
+  </div>
+</div>

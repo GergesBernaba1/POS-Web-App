@@ -1,0 +1,66 @@
+.user-management-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+h2, h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+form input, form select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #2d7cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+button[disabled] {
+  background: #b0c4e7;
+  cursor: not-allowed;
+}
+
+.users-list {
+  margin-top: 32px;
+}
+
+.users-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.users-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
