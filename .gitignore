@@ -1,0 +1,46 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Angular
+/dist
+/.angular/cache
+
+# Environment
+.env
+.env.*
+
+# Others
+*.swp
+*.tmp
+
+# Build
+/dist/
+/build/
+
+# Test
+/coverage/
+
+# Publish
+wwwroot/
+
+# Rider
+.idea/
+*.sln.iml
